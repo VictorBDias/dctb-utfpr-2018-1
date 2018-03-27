@@ -86,6 +86,14 @@ void printVet(int n, int v[]){
     printf("\n");
 }
 
+void printVet2(int n, int v[]){
+    int j;
+    for(j = 1; j<n+1 ; j++){
+        printf("[%d] ", v[j]);
+    }
+    printf("\n");
+}
+
 /**
   * Função Principal
   */
@@ -99,7 +107,7 @@ int main(){
     printVet(7, v);
     mergeSort(v, 0, 7);
     printf("Vetor ordenado:\n");
-    printVet(7, v);
+    printVet2(7, v);
     printf("Testando intercalação para {1,12,18,3,5,20,80} :\n");
     printVet(7, x);
     intercala(x, 0, 7, 2);
